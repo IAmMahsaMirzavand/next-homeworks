@@ -25,7 +25,7 @@ const styles = {
 export default function NotFound() {
   return (
     <div style={styles.container}>
-      <h1 style={styles.text}>not-found</h1>
+      <h1 style={styles.text}>404-Not Found</h1>
       <img 
         src="/2T3M.gif" 
         alt="not-img" 
