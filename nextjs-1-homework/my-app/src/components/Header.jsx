@@ -112,12 +112,13 @@ function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => {
 
-const activeStyle = {textDecoration: pathName === page.path ? "underline overline" : "none"};
+
 
 return (
-              <Link key={page.name} href={page.path} style={{ ...activeStyle, color: "red"}}passHref>
+              <Link key={page.name} href={page.path} passHref>
 
                 <Button
+                  className={pathName === page.path ? "activeLink" : ""}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
